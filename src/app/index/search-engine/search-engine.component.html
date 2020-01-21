@@ -1,0 +1,14 @@
+<div class="app-search-engine">
+  <div class="logo">
+    <img src="/assets/img/index/baidu-logo.png" alt="">
+  </div>
+  <div class="box">
+    <nz-input-group class="search-input" nzSearch nzSize="large" [nzAddOnAfter]="suffixButton">
+      <input type="text" [(ngModel)]="searchText" nz-input />
+    </nz-input-group>
+    <ng-template #suffixButton>
+      <button nz-button nzType="primary" nzSize="large" (click)="submit()" nzSearch>Search</button>
+    </ng-template>
+  </div>
+</div>
+
